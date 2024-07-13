@@ -5,3 +5,27 @@ body {
 .quiz {
     display: none;
 }
+
+.quiz-container,.quiz-levels {
+    display: none;
+}
+
+.quiz.active {
+    display: block;
+}
+
+.quiz.select-level .quiz-levels {
+    display: block;
+}
+
+.quiz.select-level .quiz-container {
+    display: none;
+}
+
+.quiz.play .quiz-levels {
+    display: none;
+}
+
+.quiz.play .quiz-container {
+    display: block;
+}

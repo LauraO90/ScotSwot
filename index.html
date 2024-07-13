@@ -16,13 +16,20 @@
 
             <button id="open-instructions" class="primary">How to play?</button>
 
-            <button id="start-quiz" class="primary">Start quiz</button>
+            <button id="start-quiz" class="primary" onclick="startQuiz()">Start quiz</button>
 
         </div>
     </section>
 
     <section class="quiz"id="quiz">
 
+        <div class="quiz-levels">
+            <button id="easy" class="primary" onclick="beginEasyQuiz()">Easy</button>
+            <button id="medium" class="primary">Medium</button>
+            <button id="hard" class="primary">Hard</button>
+        </div>
+
+        <div class="quiz-container">
         <div id="question-tally">
             <span id="current-question-number"></span>
             <span>&#47;</span>
@@ -31,7 +38,7 @@
         <div id="score"></div>
 
         <div id="quiz-questions">
-            
+
             <p id="question"></p>
             <div id="options">
                 <input type="radio" id="option-1" name="options" />
@@ -42,7 +49,7 @@
                 <label for="option-3" class="quiz-option"></label>
             </div>
         </div>
-
+    </div>
     </section>
 
 

@@ -114,7 +114,26 @@ const hardQuestions = [
 ]
 
 
+const quizContainer = document.getElementById('quiz');
+const currentQuestionNumber = document.getElementById('current-question-number');
+const totalQuestions = document.getElementById('total-questions');
+const currenScore = document.getElementById('score');
+const quizQuestion = document.getElementById('question');
+const optionOne = document.getElementById('option-1');
+const optionOneLabel = document.querySelector('label[for="option-1"]');
+const optionTwo = document.getElementById('option-2');
+const optionTwoLabel = document.querySelector('label[for="option-2"]');
+const optionThree = document.getElementById('option-3');
+const optionThreeLabel = document.querySelector('label[for="option-3"]');
 
+function startQuiz(){
+    quizContainer.className = 'quiz active select-level';
+} 
 
+function beginEasyQuiz () {
+    // Set up easy quiz 
+    quizContainer.className = 'quiz active play';
+
+}
 
 
