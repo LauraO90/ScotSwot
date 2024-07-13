@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>ScotSwot</title>
 </head>
+
 <body>
-    
+    <h1>ScotSwot</h1>
+    <p>TBD</p>
+    <section>
+        <div class="intruction">
+
+            <button id="open-instructions" class="primary">How to play?</button>
+
+            <button id="start-quiz" class="primary">Start quiz</button>
+
+        </div>
+    </section>
+
+    <section class="quiz"id="quiz">
+
+        <div id="question-tally"></div>
+        <div id="score"></div>
+
+        <div id="quiz-questions">
+            <p id="question"></p>
+            <div id="options">
+                <input type="radio" id="option-1" name="options" />
+                <label for="option-1" class="quiz-option"></label>
+                <input type="radio" id="option-2" name="options" />
+                <label for="option-2" class="quiz-option"></label>
+                <input type="radio" id="option-3" name="options" />
+                <label for="option-3" class="quiz-option"></label>
+            </div>
+        </div>
+
+    </section>
+
+
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
