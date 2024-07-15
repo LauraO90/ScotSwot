@@ -130,6 +130,7 @@ const nextQuestionButton = document.getElementById('next-question');
 
 // Global variables
 let currentQuestion;
+let currentQuestionIndex;
 
 function startQuiz() {
     quizContainer.className = 'quiz active select-level';
@@ -141,6 +142,10 @@ function showQuestions() {
 
 function showNextQuestionButton() {
     nextQuestionButton.className = 'next-question show';
+}
+
+function hideNextQuestionButton() {
+    nextQuestionButton.className = 'next-question';
 }
 
 function submitAnswer() {
@@ -155,12 +160,15 @@ function submitAnswer() {
     showNextQuestionButton();
 }
 
+function goToNextQuestion() {
+    currentQuestionIndex++;
+    currentQuestion = easyQuestions[currentQuestionIndex];
 
-function beginEasyQuiz() {
-    // Set up easy quiz 
+    showCurrentQuestion();
+    hideNextQuestionButton();
+}
 
-    currentQuestion = easyQuestions[0];
-
+function showCurrentQuestion() {
     quizQuestionElement.innerHTML = currentQuestion.question;
     optionOneElement.value = currentQuestion.options[0];
     optionOneLabelElement.innerHTML = currentQuestion.options[0];
@@ -168,9 +176,15 @@ function beginEasyQuiz() {
     optionTwoLabelElement.innerHTML = currentQuestion.options[1];
     optionThreeElement.value = currentQuestion.options[2];
     optionThreeLabelElement.innerHTML = currentQuestion.options[2];
+}
+
+function beginEasyQuiz() {
+    currentQuestionIndex = 0;
+    currentQuestion = easyQuestions[currentQuestionIndex];
+
+    showCurrentQuestion();
 
     showQuestions();
-
 }
 
 function beginMediumQuiz() {
