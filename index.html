@@ -40,14 +40,22 @@
         <div id="quiz-questions">
 
             <p id="question"></p>
+
             <div id="options">
                 <input type="radio" id="option-1" name="options" />
                 <label for="option-1" class="quiz-option"></label>
+
                 <input type="radio" id="option-2" name="options" />
                 <label for="option-2" class="quiz-option"></label>
+
                 <input type="radio" id="option-3" name="options" />
                 <label for="option-3" class="quiz-option"></label>
             </div>
+
+            <button id="submit" onclick="submitAnswer()">Submit answer!</button>
+            <button id="next-question" class="next-question" onclick="showNextQuestionButton()">Next question</button>
+
+            <p id="answer-feedback"></p>  
         </div>
     </div>
     </section>

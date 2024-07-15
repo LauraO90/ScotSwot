@@ -29,3 +29,11 @@ body {
 .quiz.play .quiz-container {
     display: block;
 }
+
+.next-question {
+    display: none;
+}
+
+.next-question.show {
+    display: block;
+}

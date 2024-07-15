@@ -36,7 +36,7 @@ const easyQuestions = [
     },
 ]
 
-const medQuestions = [
+const mediumQuestions = [
     {
         question: 'What does "wheesht" mean?',
         options: ['Be Quiet', 'Go Away', 'Stop It'],
@@ -115,17 +115,21 @@ const hardQuestions = [
 
 
 const quizContainer = document.getElementById('quiz');
-const currentQuestionNumber = document.getElementById('current-question-number');
-const totalQuestions = document.getElementById('total-questions');
-const currenScore = document.getElementById('score');
-const quizQuestion = document.getElementById('question');
-const optionOne = document.getElementById('option-1');
-const optionOneLabel = document.querySelector('label[for="option-1"]');
-const optionTwo = document.getElementById('option-2');
-const optionTwoLabel = document.querySelector('label[for="option-2"]');
-const optionThree = document.getElementById('option-3');
-const optionThreeLabel = document.querySelector('label[for="option-3"]');
+const currentQuestionNumberElement = document.getElementById('current-question-number');
+const totalQuestionsElement = document.getElementById('total-questions');
+const currentScoreElement = document.getElementById('score');
+const quizQuestionElement = document.getElementById('question');
+const optionOneElement = document.getElementById('option-1');
+const optionOneLabelElement = document.querySelector('label[for="option-1"]');
+const optionTwoElement = document.getElementById('option-2');
+const optionTwoLabelElement = document.querySelector('label[for="option-2"]');
+const optionThreeElement = document.getElementById('option-3');
+const optionThreeLabelElement = document.querySelector('label[for="option-3"]');
+const answerFeedbackElement = document.getElementById('answer-feedback');
+const nextQuestionButton = document.getElementById('next-question');
 
+// Global variables
+let currentQuestion;
 
 function startQuiz() {
     quizContainer.className = 'quiz active select-level';
@@ -135,8 +139,36 @@ function showQuestions() {
     quizContainer.className = 'quiz active play';
 }
 
+function showNextQuestionButton() {
+    nextQuestionButton.className = 'next-question show';
+}
+
+function submitAnswer() {
+    const selectedAnswer = document.querySelector('[name="options"]:checked').value;
+
+    if (currentQuestion.answer === selectedAnswer) {
+        answerFeedbackElement.innerHTML = 'Correct';
+    } else {
+        answerFeedbackElement.innerHTML = 'Incorrect';
+    }
+
+    showNextQuestionButton();
+}
+
+
 function beginEasyQuiz() {
     // Set up easy quiz 
+
+    currentQuestion = easyQuestions[0];
+
+    quizQuestionElement.innerHTML = currentQuestion.question;
+    optionOneElement.value = currentQuestion.options[0];
+    optionOneLabelElement.innerHTML = currentQuestion.options[0];
+    optionTwoElement.value = currentQuestion.options[1];
+    optionTwoLabelElement.innerHTML = currentQuestion.options[1];
+    optionThreeElement.value = currentQuestion.options[2];
+    optionThreeLabelElement.innerHTML = currentQuestion.options[2];
+
     showQuestions();
 
 }
