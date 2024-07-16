@@ -148,6 +148,10 @@ function showNextQuestionButton() {
 function hideNextQuestionButton() {
     nextQuestionButton.className = 'next-question';
 }
+function showQuizSummary() {
+
+//End quiz    
+}
 
 function submitAnswer() {
     const selectedAnswer = document.querySelector('[name="options"]:checked').value;
@@ -158,7 +162,11 @@ function submitAnswer() {
         answerFeedbackElement.innerHTML = 'Incorrect';
     }
 
-    showNextQuestionButton();
+    if (currentQuestionIndex === (currentQuestions.length - 1)) {
+        showQuizSummary();
+    } else {
+        showNextQuestionButton();
+    }
 }
 
 function goToNextQuestion() {
@@ -186,19 +194,19 @@ function beginQuiz(quizQuestions) {
 
     showCurrentQuestion();
 
-    showQuestions();  
+    showQuestions();
 }
 
 function beginEasyQuiz() {
- beginQuiz(easyQuestions)
+    beginQuiz(easyQuestions)
 }
 
 function beginMediumQuiz() {
-beginQuiz(mediumQuestions)
+    beginQuiz(mediumQuestions)
 
 }
 function beginHardQuiz() {
-beginQuiz(hardQuestions)
+    beginQuiz(hardQuestions)
 
 }
 

@@ -6,7 +6,8 @@ body {
     display: none;
 }
 
-.quiz-container,.quiz-levels {
+.quiz-container,
+.quiz-levels {
     display: none;
 }
 
