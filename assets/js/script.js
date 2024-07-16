@@ -127,11 +127,13 @@ const optionThreeElement = document.getElementById('option-3');
 const optionThreeLabelElement = document.querySelector('label[for="option-3"]');
 const answerFeedbackElement = document.getElementById('answer-feedback');
 const nextQuestionButton = document.getElementById('next-question');
+const quizSummaryElement = document.getElementById('quiz-summary');
 
 // Global variables
 let currentQuestions;
 let currentQuestion;
 let currentQuestionIndex;
+let totalCorrectAnswers;
 
 function startQuiz() {
     quizContainer.className = 'quiz active select-level';
@@ -139,6 +141,10 @@ function startQuiz() {
 
 function showQuestions() {
     quizContainer.className = 'quiz active play';
+}
+
+function showQuizSummaryContainer() {
+    quizContainer.className = 'quiz active summary';
 }
 
 function showNextQuestionButton() {
@@ -149,8 +155,19 @@ function hideNextQuestionButton() {
     nextQuestionButton.className = 'next-question';
 }
 function showQuizSummary() {
+    let quizSummaryText; 
 
-//End quiz    
+    if (totalCorrectAnswers === currentQuestions.length) {
+        quizSummaryText = totalCorrectAnswers + '/' + currentQuestions.length + ' - Yaldi (woohoo)!';
+    }
+    else {
+        quizSummaryText = totalCorrectAnswers + '/' + currentQuestions.length + ' - Nae Luck (better luck next time)!' 
+    }
+
+    quizSummaryElement.innerHTML = quizSummaryText;
+
+
+    showQuizSummaryContainer();
 }
 
 function submitAnswer() {
@@ -158,6 +175,7 @@ function submitAnswer() {
 
     if (currentQuestion.answer === selectedAnswer) {
         answerFeedbackElement.innerHTML = 'Correct';
+        totalCorrectAnswers++;
     } else {
         answerFeedbackElement.innerHTML = 'Incorrect';
     }
@@ -179,12 +197,16 @@ function goToNextQuestion() {
 
 function showCurrentQuestion() {
     quizQuestionElement.innerHTML = currentQuestion.question;
+
     optionOneElement.value = currentQuestion.options[0];
     optionOneLabelElement.innerHTML = currentQuestion.options[0];
     optionTwoElement.value = currentQuestion.options[1];
     optionTwoLabelElement.innerHTML = currentQuestion.options[1];
     optionThreeElement.value = currentQuestion.options[2];
     optionThreeLabelElement.innerHTML = currentQuestion.options[2];
+
+    currentQuestionNumberElement.innerHTML = currentQuestionIndex + 1;
+
 }
 
 function beginQuiz(quizQuestions) {
@@ -193,6 +215,10 @@ function beginQuiz(quizQuestions) {
     currentQuestion = quizQuestions[currentQuestionIndex];
 
     showCurrentQuestion();
+
+    totalQuestionsElement.innerHTML = currentQuestions.length;
+
+    totalCorrectAnswers = 0;
 
     showQuestions();
 }

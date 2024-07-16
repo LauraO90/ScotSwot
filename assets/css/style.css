@@ -7,7 +7,8 @@ body {
 }
 
 .quiz-container,
-.quiz-levels {
+.quiz-levels,
+.quiz-summary-container {
     display: none;
 }
 
@@ -19,16 +20,27 @@ body {
     display: block;
 }
 
-.quiz.select-level .quiz-container {
+.quiz.select-level .quiz-container,
+.quiz.select-level .quiz-summary-container {
     display: none;
 }
 
-.quiz.play .quiz-levels {
+.quiz.play .quiz-levels,
+.quiz.play .quiz-summary-container  {
     display: none;
 }
 
 .quiz.play .quiz-container {
     display: block;
+}
+
+.quiz.summary .quiz-summary-container {
+    display: block;
+}
+
+.quiz.summary .quiz-levels,
+.quiz.summary .quiz-container {
+    display: none;
 }
 
 .next-question {
@@ -38,3 +50,4 @@ body {
 .next-question.show {
     display: block;
 }
+
