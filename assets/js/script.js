@@ -129,6 +129,7 @@ const answerFeedbackElement = document.getElementById('answer-feedback');
 const nextQuestionButton = document.getElementById('next-question');
 
 // Global variables
+let currentQuestions;
 let currentQuestion;
 let currentQuestionIndex;
 
@@ -162,7 +163,7 @@ function submitAnswer() {
 
 function goToNextQuestion() {
     currentQuestionIndex++;
-    currentQuestion = easyQuestions[currentQuestionIndex];
+    currentQuestion = currentQuestions[currentQuestionIndex];
 
     showCurrentQuestion();
     hideNextQuestionButton();
@@ -178,23 +179,26 @@ function showCurrentQuestion() {
     optionThreeLabelElement.innerHTML = currentQuestion.options[2];
 }
 
-function beginEasyQuiz() {
+function beginQuiz(quizQuestions) {
     currentQuestionIndex = 0;
-    currentQuestion = easyQuestions[currentQuestionIndex];
+    currentQuestions = quizQuestions;
+    currentQuestion = quizQuestions[currentQuestionIndex];
 
     showCurrentQuestion();
 
-    showQuestions();
+    showQuestions();  
+}
+
+function beginEasyQuiz() {
+ beginQuiz(easyQuestions)
 }
 
 function beginMediumQuiz() {
-    // Set up medium quiz 
-    showQuestions();
+beginQuiz(mediumQuestions)
 
 }
 function beginHardQuiz() {
-    // Set up hard quiz 
-    showQuestions();
+beginQuiz(hardQuestions)
 
 }
 
