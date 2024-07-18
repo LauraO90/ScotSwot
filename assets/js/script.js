@@ -1,4 +1,5 @@
 const quizContainer = document.getElementById('quiz');
+const instructionsDialogElement = document.getElementById('quiz-instructions');
 const currentQuestionNumberElement = document.getElementById('current-question-number');
 const totalQuestionsElement = document.getElementById('total-questions');
 const currentScoreElement = document.getElementById('score');
@@ -18,6 +19,14 @@ let currentQuestions;
 let currentQuestion;
 let currentQuestionIndex;
 let totalCorrectAnswers;
+
+function openInstructions() {
+    instructionsDialogElement.showModal();
+}
+
+function closeInstructions() {
+    instructionsDialogElement.close();
+}
 
 function chooseQuizLevel() {
     quizContainer.className = 'quiz active select-level';
