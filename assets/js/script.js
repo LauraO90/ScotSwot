@@ -151,9 +151,19 @@ function showNextQuestionButton() {
     nextQuestionButton.className = 'next-question show';
 }
 
+function showAnswerFeedbackElement() {
+    answerFeedbackElement.className = 'show answer-feedback';
+}
+
 function hideNextQuestionButton() {
     nextQuestionButton.className = 'next-question';
 }
+
+function hideAnswerFeedbackElement () {
+    answerFeedbackElement.className = 'answer-feedback';
+}
+
+
 function showQuizSummary() {
     let quizSummaryText; 
 
@@ -177,8 +187,10 @@ function submitAnswer() {
         answerFeedbackElement.innerHTML = 'Correct';
         totalCorrectAnswers++;
     } else {
-        answerFeedbackElement.innerHTML = 'Incorrect';
+        answerFeedbackElement.innerHTML = 'Incorrect - try again!';
     }
+
+showAnswerFeedbackElement(); 
 
     if (currentQuestionIndex === (currentQuestions.length - 1)) {
         showQuizSummary();
@@ -193,6 +205,7 @@ function goToNextQuestion() {
 
     showCurrentQuestion();
     hideNextQuestionButton();
+    hideAnswerFeedbackElement();
 }
 
 function showCurrentQuestion() {
@@ -220,6 +233,7 @@ function beginQuiz(quizQuestions) {
 
     totalCorrectAnswers = 0;
 
+    hideAnswerFeedbackElement();
     showQuestions();
 }
 
