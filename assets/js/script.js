@@ -154,19 +154,6 @@ function beginQuiz(quizQuestions) {
     showQuestions();
 }
 
-function beginEasyQuiz() {
-    beginQuiz(easyQuestions)
-}
-
-function beginMediumQuiz() {
-    beginQuiz(mediumQuestions)
-
-}
-function beginHardQuiz() {
-    beginQuiz(hardQuestions)
-
-}
-
 function showQuestions() {
     quizContainer.className = 'quiz active play';
 }
