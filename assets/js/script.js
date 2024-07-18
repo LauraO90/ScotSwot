@@ -135,8 +135,36 @@ let currentQuestion;
 let currentQuestionIndex;
 let totalCorrectAnswers;
 
-function startQuiz() {
+function chooseQuizLevel() {
     quizContainer.className = 'quiz active select-level';
+}
+
+function beginQuiz(quizQuestions) {
+    currentQuestionIndex = 0;
+    currentQuestions = quizQuestions;
+    currentQuestion = quizQuestions[currentQuestionIndex];
+
+    showCurrentQuestion();
+
+    totalQuestionsElement.innerHTML = currentQuestions.length;
+
+    totalCorrectAnswers = 0;
+
+    hideAnswerFeedbackElement();
+    showQuestions();
+}
+
+function beginEasyQuiz() {
+    beginQuiz(easyQuestions)
+}
+
+function beginMediumQuiz() {
+    beginQuiz(mediumQuestions)
+
+}
+function beginHardQuiz() {
+    beginQuiz(hardQuestions)
+
 }
 
 function showQuestions() {
@@ -222,32 +250,6 @@ function showCurrentQuestion() {
 
 }
 
-function beginQuiz(quizQuestions) {
-    currentQuestionIndex = 0;
-    currentQuestions = quizQuestions;
-    currentQuestion = quizQuestions[currentQuestionIndex];
 
-    showCurrentQuestion();
-
-    totalQuestionsElement.innerHTML = currentQuestions.length;
-
-    totalCorrectAnswers = 0;
-
-    hideAnswerFeedbackElement();
-    showQuestions();
-}
-
-function beginEasyQuiz() {
-    beginQuiz(easyQuestions)
-}
-
-function beginMediumQuiz() {
-    beginQuiz(mediumQuestions)
-
-}
-function beginHardQuiz() {
-    beginQuiz(hardQuestions)
-
-}
 
 
