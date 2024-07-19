@@ -3,18 +3,26 @@
 html {
     font-family: 'Signika', sans-serif;
 }
+
+.header-link {
+    text-decoration: none;
+    color: black;
+}
+
 body {
     background-color: lightskyblue;
 }
 
 h1 {
     letter-spacing: 2px;
-    color: black
+}
+
+h2 {
+    letter-spacing: 1px;
 }
 
 p {
     letter-spacing: 1px;
-    color: black
 }
 
 button {
