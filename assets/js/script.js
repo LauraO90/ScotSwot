@@ -2,7 +2,6 @@ const quizContainer = document.getElementById('quiz');
 const instructionsDialogElement = document.getElementById('quiz-instructions');
 const currentQuestionNumberElement = document.getElementById('current-question-number');
 const totalQuestionsElement = document.getElementById('total-questions');
-const currentScoreElement = document.getElementById('score');
 const quizQuestionElement = document.getElementById('question');
 const optionOneElement = document.getElementById('option-1');
 const optionOneLabelElement = document.querySelector('label[for="option-1"]');
@@ -79,7 +78,7 @@ function showQuizSummary() {
         quizSummaryText = totalCorrectAnswers + '/' + currentQuestions.length + ' - Yaldi (woohoo)!';
     }
     else {
-        quizSummaryText = totalCorrectAnswers + '/' + currentQuestions.length + ' - Nae Luck (better luck next time)!'
+        quizSummaryText = totalCorrectAnswers + '/' + currentQuestions.length + ' - Nae Luck (better luck next time)!';
     }
 
     quizSummaryElement.innerHTML = quizSummaryText;
