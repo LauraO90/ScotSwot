@@ -55,34 +55,37 @@
         </div>
 
         <div class="quiz-container">
-            <div class="question-tally" id="question-tally">
-                <span id="current-question-number"></span>
-                <span>&#47;</span>
-                <span id="total-questions"></span>
-            </div>
-
-            <div id="quiz-questions">
-
-                <p id="question"></p>
-
-                <div class="radio-options" id="options">
-                    <input type="radio" id="option-1" name="options" />
-                    <label for="option-1" class="quiz-option"></label>
-
-                    <input type="radio" id="option-2" name="options" />
-                    <label for="option-2" class="quiz-option"></label>
-
-                    <input type="radio" id="option-3" name="options" />
-                    <label for="option-3" class="quiz-option"></label>
+            <div>
+                <div class="question-tally" id="question-tally">
+                    <span id="current-question-number"></span>
+                    <span>&#47;</span>
+                    <span id="total-questions"></span>
                 </div>
 
-                <div class="quiz-buttons">
-                    <button id="submit" class="secondary" onclick="submitAnswer()">Submit answer!</button>
-                    <button id="next-question" class="next-question secondary" onclick="goToNextQuestion()">Next
-                        question</button>
-                </div>
+                <div id="quiz-questions">
 
-                <p class="answer-feedback" id="answer-feedback"><span id="answer-feedback-text" class="answer-feedback-text"></span></p>
+                    <p id="question"></p>
+
+                    <div class="radio-options" id="options">
+                        <input type="radio" id="option-1" name="options" />
+                        <label for="option-1" class="quiz-option"></label>
+
+                        <input type="radio" id="option-2" name="options" />
+                        <label for="option-2" class="quiz-option"></label>
+
+                        <input type="radio" id="option-3" name="options" />
+                        <label for="option-3" class="quiz-option"></label>
+                    </div>
+
+                    <div class="quiz-buttons">
+                        <button id="submit" class="secondary" onclick="submitAnswer()">Submit answer!</button>
+                        <button id="next-question" class="next-question secondary" onclick="goToNextQuestion()">Next
+                            question</button>
+                    </div>
+
+                    <p class="answer-feedback" id="answer-feedback"><span id="answer-feedback-text"
+                            class="answer-feedback-text"></span></p>
+                </div>
             </div>
         </div>
 

@@ -115,10 +115,18 @@ button.secondary {
 
 .quiz.play .quiz-container {
     display: block;
+    min-height: 35vh;
 }
 
 .quiz.summary .quiz-summary-container {
-    display: block;
+    display: flex;
+    font-size: 1.5rem;
+    min-height: 35vh;
+    background-color: white;
+    color: var(--scotswot-blue);
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
 }
 
 .quiz.summary .quiz-levels,
