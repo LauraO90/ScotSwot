@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
 
+:root {
+    --scotswot-blue:#0a1547;
+}
+
 html {
     font-family: 'Signika', sans-serif;
 }
@@ -11,7 +15,7 @@ html {
 }
 
 body {
-    background-color: #0a1547;
+    background-color: var(--scotswot-blue);
     color: white;
     padding: 1.5em;
     text-align: center;
@@ -34,7 +38,35 @@ section + section {
 }
 
 button {
-    font-family: 'Signika', sans-serif;
+    font-family: inherit;
+    padding: 0.75em 1.5em;
+    border-radius: 10px;
+}
+
+button.primary {
+    color: var(--scotswot-blue);
+    background-color: white;
+}
+
+button.primary + button.primary {
+    margin-left: 1em;
+}
+
+button.secondary {
+    background-color: var(--scotswot-blue);
+    color: white;
+}
+
+.instructions {
+    color: var(--scotswot-blue);
+}
+
+.instructions-list {
+    text-align: left;
+}
+
+.instructions-list li + li {
+    margin-top: 0.5em;
 }
 
 .quiz {
