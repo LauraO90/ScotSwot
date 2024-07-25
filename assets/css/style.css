@@ -126,12 +126,30 @@ button.secondary {
     display: none;
 }
 
+.quiz-container {
+    background-color: white;
+    color: var(--scotswot-blue);
+    padding: 1em;
+}
+
+.question-tally {
+    text-align: right;
+}
+
+.radio-options {
+    padding: 1em 0;
+}
+
+.quiz-buttons {
+    margin-top: 1em;
+}
+
 .next-question {
     display: none;
 }
 
 .next-question.show {
-    display: block;
+    display: inline-block;
 }
 
 .answer-feedback {
@@ -140,4 +158,12 @@ button.secondary {
 
 .answer-feedback.show {
     display: block;
+}
+
+.answer-feedback-text.correct {
+    color: green;
+}
+
+.answer-feedback-text.incorrect {
+    color: red;
 }

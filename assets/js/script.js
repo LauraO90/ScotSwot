@@ -10,6 +10,7 @@ const optionTwoLabelElement = document.querySelector('label[for="option-2"]');
 const optionThreeElement = document.getElementById('option-3');
 const optionThreeLabelElement = document.querySelector('label[for="option-3"]');
 const answerFeedbackElement = document.getElementById('answer-feedback');
+const answerFeedbackTextElement = document.getElementById('answer-feedback-text');
 const nextQuestionButton = document.getElementById('next-question');
 const quizSummaryElement = document.getElementById('quiz-summary');
 const dialogOverlayElement = document.getElementById('dialog-overlay');
@@ -58,7 +59,7 @@ function showQuizSummaryContainer() {
 }
 
 function showNextQuestionButton() {
-    nextQuestionButton.className = 'next-question show';
+    nextQuestionButton.className = 'next-question show secondary';
 }
 
 function showAnswerFeedbackElement() {
@@ -66,7 +67,7 @@ function showAnswerFeedbackElement() {
 }
 
 function hideNextQuestionButton() {
-    nextQuestionButton.className = 'next-question';
+    nextQuestionButton.className = 'next-question secondary';
 }
 
 function hideAnswerFeedbackElement() {
@@ -94,10 +95,12 @@ function submitAnswer() {
     const selectedAnswer = document.querySelector('[name="options"]:checked').value;
 
     if (currentQuestion.answer === selectedAnswer) {
-        answerFeedbackElement.innerHTML = 'Correct';
+        answerFeedbackTextElement.innerHTML = 'Correct';
+        answerFeedbackTextElement.className = 'answer-feedback-text correct';
         totalCorrectAnswers++;
     } else {
-        answerFeedbackElement.innerHTML = 'Incorrect - try again!';
+        answerFeedbackTextElement.innerHTML = 'Incorrect - try again!';
+        answerFeedbackTextElement.className = 'answer-feedback-text incorrect';
     }
 
     showAnswerFeedbackElement();

@@ -9,18 +9,18 @@
 </head>
 
 <body>
-<section>
-    <header>
-        <a class="header-link" href="index.html">
-            <h1>ScotSwot</h1>
-        </a>
-    </header>
+    <section>
+        <header>
+            <a class="header-link" href="index.html">
+                <h1>ScotSwot</h1>
+            </a>
+        </header>
 
-    <h2>Welcome to ScotSwot!</h2>
-    <p>Think you know Scottish lingo? Take the ScotSwot quiz and put your knowledge of uniquely
-        Scottish words and phrases to the test.
-    </p>
-</section>
+        <h2>Welcome to ScotSwot!</h2>
+        <p>Think you know Scottish lingo? Take the ScotSwot quiz and put your knowledge of uniquely
+            Scottish words and phrases to the test.
+        </p>
+    </section>
 
     <section>
         <div>
@@ -55,7 +55,7 @@
         </div>
 
         <div class="quiz-container">
-            <div id="question-tally">
+            <div class="question-tally" id="question-tally">
                 <span id="current-question-number"></span>
                 <span>&#47;</span>
                 <span id="total-questions"></span>
@@ -65,7 +65,7 @@
 
                 <p id="question"></p>
 
-                <div id="options">
+                <div class="radio-options" id="options">
                     <input type="radio" id="option-1" name="options" />
                     <label for="option-1" class="quiz-option"></label>
 
@@ -76,10 +76,13 @@
                     <label for="option-3" class="quiz-option"></label>
                 </div>
 
-                <button id="submit" onclick="submitAnswer()">Submit answer!</button>
-                <button id="next-question" class="next-question" onclick="goToNextQuestion()">Next question</button>
+                <div class="quiz-buttons">
+                    <button id="submit" class="secondary" onclick="submitAnswer()">Submit answer!</button>
+                    <button id="next-question" class="next-question secondary" onclick="goToNextQuestion()">Next
+                        question</button>
+                </div>
 
-                <p class="answer-feedback" id="answer-feedback"></p>
+                <p class="answer-feedback" id="answer-feedback"><span id="answer-feedback-text" class="answer-feedback-text"></span></p>
             </div>
         </div>
 
