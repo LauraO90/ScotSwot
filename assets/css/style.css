@@ -6,11 +6,15 @@ html {
 
 .header-link {
     text-decoration: none;
-    color: black;
+    color: white;
+    text-align: center;
 }
 
 body {
-    background-color: lightskyblue;
+    background-color: #0a1547;
+    color: white;
+    padding: 1.5em;
+    text-align: center;
 }
 
 h1 {
@@ -23,6 +27,10 @@ h2 {
 
 p {
     letter-spacing: 1px;
+}
+
+section + section {
+    margin-top: 3em;
 }
 
 button {
