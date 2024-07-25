@@ -69,6 +69,22 @@ button.secondary {
     margin-top: 0.5em;
 }
 
+.dialog-overlay {
+    display: none;
+    background: grey;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+.dialog-overlay.show {
+    display: block;
+}
+
 .quiz {
     display: none;
 }

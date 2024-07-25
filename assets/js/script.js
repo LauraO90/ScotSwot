@@ -12,6 +12,7 @@ const optionThreeLabelElement = document.querySelector('label[for="option-3"]');
 const answerFeedbackElement = document.getElementById('answer-feedback');
 const nextQuestionButton = document.getElementById('next-question');
 const quizSummaryElement = document.getElementById('quiz-summary');
+const dialogOverlayElement = document.getElementById('dialog-overlay');
 
 // Global variables
 let currentQuestions;
@@ -21,10 +22,12 @@ let totalCorrectAnswers;
 
 function openInstructions() {
     instructionsDialogElement.showModal();
+    dialogOverlayElement.className = 'dialog-overlay show';
 }
 
 function closeInstructions() {
     instructionsDialogElement.close();
+    dialogOverlayElement.className = 'dialog-overlay';
 }
 
 function chooseQuizLevel() {
