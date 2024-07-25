@@ -113,15 +113,17 @@ button.secondary {
     display: none;
 }
 
+.quiz-summary-container, .quiz-container {
+    min-height: 35vh;
+}
+
 .quiz.play .quiz-container {
     display: block;
-    min-height: 35vh;
 }
 
 .quiz.summary .quiz-summary-container {
     display: flex;
     font-size: 1.5rem;
-    min-height: 35vh;
     background-color: white;
     color: var(--scotswot-blue);
     align-items: center;
@@ -174,4 +176,16 @@ button.secondary {
 
 .answer-feedback-text.incorrect {
     color: red;
+}
+
+
+@media screen and (min-width: 768px) {
+    section {
+        max-width: 60%;
+        margin: auto;
+    }
+
+    .quiz-summary-container, .quiz-container {
+        min-height: 25vh;
+    }
 }
