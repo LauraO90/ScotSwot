@@ -92,7 +92,19 @@ function showQuizSummary() {
 }
 
 function submitAnswer() {
-    const selectedAnswer = document.querySelector('[name="options"]:checked').value;
+    const selectedAnswerElement = document.querySelector('[name="options"]:checked');
+
+    if (!selectedAnswerElement) {
+        answerFeedbackTextElement.innerHTML = 'Please select an answer';
+        answerFeedbackTextElement.className = 'answer-feedback-text incorrect';
+
+        showAnswerFeedbackElement();
+
+        return;
+    }
+
+    const selectedAnswer = selectedAnswerElement.value;
+
 
     if (currentQuestion.answer === selectedAnswer) {
         answerFeedbackTextElement.innerHTML = 'Correct';
