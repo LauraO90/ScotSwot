@@ -9,7 +9,7 @@ html {
 }
 
 header {
-    background: url("../images/tartan-image.png") no-repeat center center / cover;
+    background: url("../images/tartan-image-min.png") no-repeat center center / cover;
 }
 
 .header-link {
@@ -224,5 +224,4 @@ button.secondary {
     .nessie-img {
         max-width: 14%;
     }
-
 }

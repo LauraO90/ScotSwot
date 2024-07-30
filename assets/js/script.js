@@ -133,7 +133,3 @@ function showCurrentQuestion() {
 
     currentQuestionNumberElement.innerHTML = currentQuestionIndex + 1;
 }
-
-
-
-

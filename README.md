@@ -6,7 +6,7 @@ ScotSwot is a website that engages users by providing a fun quiz based on Scotti
 
 ## Initial planning - UX and UI ##
 Prior to developing the website, I considered a variety of key features that would be integral to the success of ScotSwot - both in terms of aesthetics and functionally. The majority of these initial ideas have been implemented and some have evolved through the development process. 
-![Initial planning](documentation/scotswot-planning-design.jpeg)
+![Initial planning](documentation/scotswot-planning-design.png)
 
 ### UX ###
 ScotSwot has been developed using the "mobile first" principle to ensure mobile users have an excellent experience. Considerations and updates were implemented to maximise the use of space available on larger screens by using media queries to again provide a great experience for users on any device. Google Developer tools were used at every stage of the process to view the UX on mobile, tablet and larger laptop and desktop screens to maximise the experience for all users:
@@ -40,10 +40,7 @@ Colours used:
 
 ### Typography ###
 
-A Google Font was selected for Scotswot. The chosen font is sans-serif without flourishes to provide style and functionality. I researched which fonts were best for readability and this font was widely regarded as accessible and aesthetically pleasing. 
-
-Font used:
-**Signika** - for all text elements to ensure consistency and clarity. 
+A Google Font was selected for Scotswot: **Signika** - for all text elements to ensure consistency and clarity. The font is sans-serif without flourishes to provide style and functionality. I researched a variety of fonts and selected this one for its readability and accessibiity whilst also being aesthetically pleasing. 
 
 ### Images ###
 
@@ -57,7 +54,7 @@ A cartoon image of the Loch Ness Monster was used to add some fun to the site fo
 
 ## Features ##
 
-ScotSwot offers an engaging online platform with clear information and interactive buttons. The overall quiz offers a seamless user experience across various devices through its responsive design. 
+ScotSwot offers an engaging online platform with clear information and interactive buttons. The overall quiz offers a smooth user experience across devices and screen sizes through its responsive design. 
 
 ### Header ###
 
