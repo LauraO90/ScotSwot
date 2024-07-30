@@ -193,8 +193,8 @@ button.secondary {
 .nessie-img {
     align-items: center;
     max-width: 30%;
-    max-height: 30%;
-    padding-top: 3em;
+    height: 30%;
+    padding-top: 2em;
 }
 
 @media screen and (min-width: 768px) {
@@ -215,8 +215,12 @@ button.secondary {
         font-size: 2.5em;
     }
 
+    p {
+        font-size: large;
+    }
+
     .nessie-img {
-        max-width: 10%;
-        max-height: 10%;
+        max-width: 15%;
+        max-height: 15%;
 }
 }
