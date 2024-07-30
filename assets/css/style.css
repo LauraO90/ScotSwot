@@ -17,6 +17,7 @@ header {
     color: white;
     text-align: center;
     padding: 0.5em;
+    font-size: medium;
 }
 
 body {
@@ -189,11 +190,21 @@ button.secondary {
     color: red;
 }
 
+.nessie-img {
+    align-items: center;
+    max-width: 30%;
+    max-height: 30%;
+    padding-top: 3em;
+}
 
 @media screen and (min-width: 768px) {
     section {
         max-width: 60%;
         margin: auto;
+    }
+
+    .header-link {
+        font-size: large;
     }
 
     .quiz-summary-container, .quiz-container {
@@ -203,4 +214,9 @@ button.secondary {
     h2 {
         font-size: 2.5em;
     }
+
+    .nessie-img {
+        max-width: 10%;
+        max-height: 10%;
+}
 }
