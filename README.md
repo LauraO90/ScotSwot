@@ -40,16 +40,16 @@ Colours used:
 
 ### Typography ###
 
-A Google Font was selected for Scotswot: **Signika** - for all text elements to ensure consistency and clarity. The font is sans-serif without flourishes to provide style and functionality. I researched a variety of fonts and selected this one for its readability and accessibiity whilst also being aesthetically pleasing. 
+A Google Font was selected for Scotswot: **Signika**. This was used for all text elements to ensure consistency and clarity. The font is sans-serif without flourishes to provide style and functionality. I researched a variety of fonts and selected this one for its readability and accessibiity whilst also being aesthetically pleasing. 
 
 ### Images ###
 
-I wanted the quiz to be the main focus of the users attention therefore images have been used thoughtfully and sparingly. 
+I want to ensure the quiz is the main focus of the users attention therefore images have been used thoughtfully and sparingly. 
 
 A digital tartan was used for the header background. Tartan is quintessentially Scottish and instantly recognisable across the world. I searched through a variety of tartans to ensure the chosen tartan compliments the “scotswot-blue” background. Additionally many of the tartans available had strong patterns with white flourishes which was avoided to ensure the ScotSwot header was clear and legible. The chosen tartan looks aesthetically pleasing in the header space without being overpowering.
-![Tartan](assets/css/images/tartan-image.png)
+![Tartan](documentation/tartan-image-min.png)
 A cartoon image of the Loch Ness Monster was used to add some fun to the site for users. The image is colourful without being distracting and works well with the overall colour scheme and subtle greens in the tartan header. The image comes with detailed alternative text descriptions, offering context for users who use screen readers.
-![Nessie](assets/css/images/nessie-image.png)
+![Nessie](documentation/nessie-image-min.png)
 
 
 ## Features ##

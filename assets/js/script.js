@@ -115,6 +115,9 @@ function submitAnswer() {
 function goToNextQuestion() {
     currentQuestionIndex++;
     currentQuestion = currentQuestions[currentQuestionIndex];
+    optionOneElement.checked = false;
+    optionTwoElement.checked = false;
+    optionThreeElement.checked = false;
 
     showCurrentQuestion();
     hideNextQuestionButton();
