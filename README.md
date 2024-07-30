@@ -33,8 +33,7 @@ ScotSwot has been developed using the "mobile first" principle to ensure mobile 
 The colour scheme for Scotswot was selected to ensure readability and accessibility. Dark navy is the primary colour to reflect the blue tones associated with Scotland. CSS variables were used to avoid repetition and enhance maintainability (primary navy colour = —scotswot-blue). I considered the use of a lighter blue to be more recognisable with the Scottish flag but felt this could be overpowering and distracting. The navy background is complemented with white text, but interactive  elements e.g. the dialog instructions and the quiz itself have a white background and the navy (—scotswot-blue) text to provide an effective contrast against the main background. 
 
 Colours used:
-
-- ** #0a1547** - for main background and some text elements in dialog and quiz container
+- **#0a1547** - for main background and some text elements in dialog and quiz container
 - **#ffffff** - for heading, main text elements and background of dialog instructions and quiz container
 - **#808080** for opaque dialog overlay 
 
@@ -44,14 +43,13 @@ Colours used:
 A Google Font was selected for Scotswot. The chosen font is sans-serif without flourishes to provide style and functionality. I researched which fonts were best for readability and this font was widely regarded as accessible and aesthetically pleasing. 
 
 Font used:
-
 **Signika** - for all text elements to ensure consistency and clarity. 
 
 ### Images ###
 
 I wanted the quiz to be the main focus of the users attention therefore images have been used thoughtfully and sparingly. 
 
-A digital tartan was used for the header background. Tartan is quintessentially Scottish and instantly recognisable and looks aesthetically pleasing in the header space without being overpowering. I searched through a variety of tartans to ensure the chosen tartan compliments the “scotswot-blue”background. Additionally many of the tartans available had strong patterns with white flourishes which was avoided to ensure the ScotSwot header was clear and legible. 
+A digital tartan was used for the header background. Tartan is quintessentially Scottish and instantly recognisable across the world. I searched through a variety of tartans to ensure the chosen tartan compliments the “scotswot-blue” background. Additionally many of the tartans available had strong patterns with white flourishes which was avoided to ensure the ScotSwot header was clear and legible. The chosen tartan looks aesthetically pleasing in the header space without being overpowering.
 ![Tartan](assets/css/images/tartan-image.png)
 A cartoon image of the Loch Ness Monster was used to add some fun to the site for users. The image is colourful without being distracting and works well with the overall colour scheme and subtle greens in the tartan header. The image comes with detailed alternative text descriptions, offering context for users who use screen readers.
 ![Nessie](assets/css/images/nessie-image.png)
@@ -128,7 +126,7 @@ The steps to fork this repository are as follows:
 
 [Google Fonts](https://fonts.google.com/) used for more appealing font options.
 
-[Tartanify] (https://tartanify.com/) used for tartan pattern on header. 
+[Tartanify](https://tartanify.com/) used for tartan pattern on header. 
 
 [Imgbin](https://imgbin.com/) used for cartoon image. 
 
