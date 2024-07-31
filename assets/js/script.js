@@ -1,3 +1,5 @@
+/* jshint esversion: 11 */
+
 const quizContainer = document.getElementById('quiz');
 const instructionsDialogElement = document.getElementById('quiz-instructions');
 const currentQuestionNumberElement = document.getElementById('current-question-number');

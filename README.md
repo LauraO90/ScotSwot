@@ -12,7 +12,7 @@ Prior to developing the website, I considered a variety of key features that wou
 
 ### UX ###
 ScotSwot has been developed using the "mobile first" principle to ensure mobile users have an excellent experience. Considerations and updates were implemented to maximise the use of space available on larger screens by using media queries to again provide a great experience for users on any device. Google Developer tools were used at every stage of the process to view the UX on mobile, tablet and larger laptop and desktop screens to maximise the experience for all users:
-![Responsiveness across screen sizes]()
+![Responsiveness across screen sizes](documentation/scotswot-screen-sizes.png)
 
 ### User Stories ###
 
@@ -52,6 +52,7 @@ A digital tartan was used for the header background. Tartan is quintessentially 
 ![Tartan](documentation/tartan-image.png)
 
 A cartoon image of the Loch Ness Monster was used to add some fun to the site for users. The image is colourful without being distracting and works well with the overall colour scheme and subtle greens in the tartan header. The image comes with detailed alternative text descriptions, offering context for users who use screen readers.
+![Nessie image](documentation/nessie-image.png)
 
 
 ## Features ##
@@ -60,27 +61,48 @@ ScotSwot offers an engaging online platform with clear information and interacti
 
 ### Header ###
 
+![Header](documentation/scotswot-header.png)
+
 ### Introduction ###
 
-### How to play? ###
+![Introduction](documentation/scotswot-introduction.png)
 
-### Difficulty selection ###
+### Quiz Instructions ###
 
-### Quiz ###
+![Instructions](documentation/scotswot-instructions.png)
 
-### Future implementations ###
+### Difficulty Selection ###
+
+![Difficulty](documentation/scotswot-difficulty-levels.png)
+
+### ScotSwot Quiz ###
+
+![Quiz questions and feedback](documentation/scotswot-quiz-questions-feedback.png)
+
+![Quiz final score](documentation/scotswot-quiz-score.png)
+
+### Future Implementations ###
 
 ## Testing ##
 Testing was used throughout the entirety of the Scotswot project. Every HTML, CSS and Javascript change or experiment was checked in the browser to monitor UX, the functionality and aesthetics of each page. With each change, Google Developer tools were used to test changes across mobile, tablet and larger laptop and desktop screens (see UX section).
 
 ### Validator Testing ### 
 
+![W3C HTML](documentation/scotswot-validator-html.png)
+
+![Jigsaw CSS](documentation/scotswot-validator-css.png)
+
+![JSHint Javascript](documentation/scotswot-validator-javascript.png)
+
 ### Browser Testing ### 
 
 ### General Fixes ###
 
+![Fix example](documentation/scotswot-fix-example.png)
+
 ### Lighthouse Audit ###
 
+![Lighthouse](documentation/scotswot-lighthouse.png)
 
 ## Deployment ##
 
