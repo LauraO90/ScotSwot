@@ -42,11 +42,11 @@ p {
     font-size: medium;
 }
 
-section {
+.page-section {
     padding: 0.5em 1.5em;
 }
 
-section+section {
+.page-section+.page-section {
     margin-top: 1em;
 }
 
@@ -199,7 +199,7 @@ button.secondary {
 }
 
 @media screen and (min-width: 768px) {
-    section {
+    .page-section {
         max-width: 60%;
         margin: auto;
     }

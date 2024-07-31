@@ -2,11 +2,13 @@
 
 ## Overview of project ##
 
-ScotSwot is a website that engages users by providing a fun quiz based on Scottish words and phrases. 
+ScotSwot is a quiz website that engages users by providing a fun and interactive quiz based on Scottish words and phrases. 
+
+![Am I Responsive](documentation/scotswot-responsive.png)
 
 ## Initial planning - UX and UI ##
 Prior to developing the website, I considered a variety of key features that would be integral to the success of ScotSwot - both in terms of aesthetics and functionally. The majority of these initial ideas have been implemented and some have evolved through the development process. 
-![Initial planning](documentation/scotswot-planning-design.png)
+![Initial planning](documentation/scotswot-planning.png)
 
 ### UX ###
 ScotSwot has been developed using the "mobile first" principle to ensure mobile users have an excellent experience. Considerations and updates were implemented to maximise the use of space available on larger screens by using media queries to again provide a great experience for users on any device. Google Developer tools were used at every stage of the process to view the UX on mobile, tablet and larger laptop and desktop screens to maximise the experience for all users:
@@ -15,14 +17,14 @@ ScotSwot has been developed using the "mobile first" principle to ensure mobile 
 ### User Stories ###
 
 1. As a first-time visitor, I want to take a quiz to test my knowledge on Scottish words and phrases.
-2. As a first time visitor, I want the site to be intuitive and welcoming, so I can easily understand how to navigate the quiz and begin playing.
+2. As a first time visitor, I want the site to be intuitive and welcoming, so I can easily navigate the quiz and begin playing.
 3. As a first-time visitor or returning user, I want to be able to play the quiz on different devices.
 4. As a first time or returning user, I want clear instructions about how to play the quiz.
 5. As a first time or returning user, I want to be able to select the level of difficulty so I can further test my knowledge and challenge myself. 
 6. As a first time or returning user, I want to receive feedback to know if I have answered correctly or incorrectly.
 7. As a first time or returning user, I want to have the ability to try quiz questions again if I give an incorrect answer to learn the correct answer.
 8. As a first time or returning user, I want two know what question I am on and how many are left.
-9. As a first time or returning user, I want to receive a final score on the quiz to see my performance. 
+9. As a first time or returning user, I want to receive a final score at the end of the quiz to see my performance. 
 10. As ScotSwot, I want to create a fun and engaging quiz that entertains users and endears them to the Scottish language and culture. 
 11. As ScotSwot, I want to create a site accessible to all users to ensure inclusivity and allow the quiz to grow in reach and popularity.
 
@@ -30,7 +32,7 @@ ScotSwot has been developed using the "mobile first" principle to ensure mobile 
 
 ### Colour Scheme ###
 
-The colour scheme for Scotswot was selected to ensure readability and accessibility. Dark navy is the primary colour to reflect the blue tones associated with Scotland. CSS variables were used to avoid repetition and enhance maintainability (primary navy colour = —scotswot-blue). I considered the use of a lighter blue to be more recognisable with the Scottish flag but felt this could be overpowering and distracting. The navy background is complemented with white text, but interactive  elements e.g. the dialog instructions and the quiz itself have a white background and the navy (—scotswot-blue) text to provide an effective contrast against the main background. 
+The colour scheme for Scotswot was selected to ensure readability and accessibility. Dark navy is the primary colour to reflect the blue tones associated with Scotland. CSS variables were used to avoid repetition and enhance maintainability (the primary navy colour being —scotswot-blue). I considered the use of a lighter blue to be more recognisable with the Scottish flag but felt this could be overpowering and distracting. The navy background is complemented with white text, but interactive  elements e.g. the dialog instructions and the quiz itself have a white background and navy (—scotswot-blue) text to provide an effective contrast against the main background. 
 
 Colours used:
 - **#0a1547** - for main background and some text elements in dialog and quiz container
@@ -40,16 +42,16 @@ Colours used:
 
 ### Typography ###
 
-A Google Font was selected for Scotswot: **Signika**. This was used for all text elements to ensure consistency and clarity. The font is sans-serif without flourishes to provide style and functionality. I researched a variety of fonts and selected this one for its readability and accessibiity whilst also being aesthetically pleasing. 
+A Google Font was selected for Scotswot: **Signika**. This was used for all text elements to ensure consistency and clarity. The font is sans-serif without flourishes to provide style and functionality. I researched a variety of fonts and selected this one for its readability and accessibility whilst also being aesthetically pleasing. 
 
 ### Images ###
 
 I want to ensure the quiz is the main focus of the users attention therefore images have been used thoughtfully and sparingly. 
 
-A digital tartan was used for the header background. Tartan is quintessentially Scottish and instantly recognisable across the world. I searched through a variety of tartans to ensure the chosen tartan compliments the “scotswot-blue” background. Additionally many of the tartans available had strong patterns with white flourishes which was avoided to ensure the ScotSwot header was clear and legible. The chosen tartan looks aesthetically pleasing in the header space without being overpowering.
-![Tartan](documentation/tartan-image-min.png)
+A digital tartan was used for the header background. Tartan is quintessentially Scottish and instantly recognisable across the world. I searched through a variety of tartans to ensure the chosen tartan compliments the “scotswot-blue” background. Additionally many of the tartans available had strong patterns with white details which were avoided to ensure the ScotSwot header was clear and legible. The chosen tartan looks aesthetically pleasing in the header space without being overpowering.
+![Tartan](documentation/tartan-image.png)
+
 A cartoon image of the Loch Ness Monster was used to add some fun to the site for users. The image is colourful without being distracting and works well with the overall colour scheme and subtle greens in the tartan header. The image comes with detailed alternative text descriptions, offering context for users who use screen readers.
-![Nessie](documentation/nessie-image-min.png)
 
 
 ## Features ##
@@ -126,6 +128,10 @@ The steps to fork this repository are as follows:
 [Tartanify](https://tartanify.com/) used for tartan pattern on header. 
 
 [Imgbin](https://imgbin.com/) used for cartoon image. 
+
+[Favicon](https://favicon.io/emoji-favicons/flag-scotland) used for favicon emoji. 
+
+[Am I Responsive](https://ui.dev/amiresponsive) used to check responsiveness alongside Google Developer tools. 
 
 
 ## Acknowledgements ##  

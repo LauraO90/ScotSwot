@@ -15,15 +15,15 @@
             <h1>ScotSwot</h1>
         </a>
     </header>
-    <section>
-
+    
+    <div class="page-section">
         <h2>Welcome to ScotSwot!</h2>
         <p>Think you know Scottish lingo? Take the ScotSwot quiz and put your knowledge of uniquely
             Scottish words and phrases to the test.
         </p>
-    </section>
+    </div>
 
-    <section>
+    <div class="page-section">
         <div>
             <div id="dialog-overlay" class="dialog-overlay"></div>
             <dialog id="quiz-instructions" class="instructions">
@@ -44,9 +44,9 @@
             <button id="start-quiz" class="primary" onclick="chooseQuizLevel()">Start quiz</button>
 
         </div>
-    </section>
+    </div>
 
-    <section class="quiz" id="quiz">
+    <div class="page-section quiz" id="quiz">
 
         <div class="quiz-levels">
             <button id="easy" class="primary" onclick="beginQuiz(easyQuestions)">Easy</button>
@@ -67,13 +67,13 @@
                     <p id="question"></p>
 
                     <div class="radio-options" id="options">
-                        <input type="radio" id="option-1" name="options" />
+                        <input type="radio" id="option-1" name="options">
                         <label for="option-1" class="quiz-option"></label>
 
-                        <input type="radio" id="option-2" name="options" />
+                        <input type="radio" id="option-2" name="options">
                         <label for="option-2" class="quiz-option"></label>
 
-                        <input type="radio" id="option-3" name="options" />
+                        <input type="radio" id="option-3" name="options">
                         <label for="option-3" class="quiz-option"></label>
                     </div>
 
@@ -92,7 +92,7 @@
         <div class="quiz-summary-container">
             <p id="quiz-summary"></p>
         </div>
-    </section>
+    </div>
 
     <img src="assets/images/nessie-image-min.png" alt="cartoon image of loch ness monster Nessie" class="nessie-img">
 

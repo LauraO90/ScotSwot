@@ -32,7 +32,7 @@ function closeInstructions() {
 }
 
 function chooseQuizLevel() {
-    quizContainer.className = 'quiz active select-level';
+    quizContainer.className = 'page-section quiz active select-level';
 }
 
 function beginQuiz(quizQuestions) {
@@ -51,11 +51,11 @@ function beginQuiz(quizQuestions) {
 }
 
 function showQuestions() {
-    quizContainer.className = 'quiz active play';
+    quizContainer.className = 'page-section quiz active play';
 }
 
 function showQuizSummaryContainer() {
-    quizContainer.className = 'quiz active summary';
+    quizContainer.className = 'page-section quiz active summary';
 }
 
 function showNextQuestionButton() {
