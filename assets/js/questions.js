@@ -72,7 +72,6 @@ const mediumQuestions = [
         options: ['Busy', 'Hot', 'Shopping'],
         answer: 'Busy',
     },
-
 ]
 
 const hardQuestions = [

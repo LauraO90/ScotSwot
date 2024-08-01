@@ -76,7 +76,6 @@ function hideAnswerFeedbackElement() {
     answerFeedbackElement.className = 'answer-feedback';
 }
 
-
 function showQuizSummary() {
     let quizSummaryText;
 
@@ -88,7 +87,6 @@ function showQuizSummary() {
     }
 
     quizSummaryElement.innerHTML = quizSummaryText;
-
 
     showQuizSummaryContainer();
 }
@@ -106,7 +104,6 @@ function submitAnswer() {
     }
 
     const selectedAnswer = selectedAnswerElement.value;
-
 
     if (currentQuestion.answer === selectedAnswer) {
         answerFeedbackTextElement.innerHTML = 'Correct';

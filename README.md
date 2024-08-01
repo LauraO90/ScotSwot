@@ -4,6 +4,8 @@
 
 Welcome to ScotSwot! ScotSwot is an interactive quiz site that engages users by providing a fun and entertaining quiz based on Scottish words and phrases. 
 
+Visit the deployed site: [ScotSwot deployment](https://laurao90.github.io/ScotSwot/)
+
 ![Am I Responsive](documentation/scotswot-responsive.png)
 
 ## Initial planning - UX and UI ##
@@ -23,26 +25,25 @@ ScotSwot has been developed using the "mobile first" principle to ensure mobile 
 5. As a first time or returning user, I want to be able to select the level of difficulty so I can further test my knowledge and challenge myself. 
 6. As a first time or returning user, I want to receive feedback to know if I have answered correctly or incorrectly.
 7. As a first time or returning user, I want to have the ability to try quiz questions again if I give an incorrect answer to learn the correct answer.
-8. As a first time or returning user, I want two know what question I am on and how many are left.
+8. As a first time or returning user, I want two know what question I am currently on and how many are left.
 9. As a first time or returning user, I want to receive a final score at the end of the quiz to see my performance. 
 10. As ScotSwot, I want to create a fun and engaging quiz that entertains users and endears them to the Scottish language and culture. 
-11. As ScotSwot, I want to create a site accessible to all users to ensure inclusivity and allow the quiz to grow in reach and popularity.
+11. As ScotSwot, I want to create an accessible site to ensure inclusivity and allow the quiz to grow in reach and popularity.
 
 ## Design ##
 
 ### Colour Scheme ###
 
-The colour scheme for Scotswot was selected to ensure readability and accessibility. Dark navy is the primary colour to reflect the blue tones associated with Scotland. CSS variables were used to avoid repetition and enhance maintainability (the primary navy colour being —scotswot-blue). I considered the use of a lighter blue to be more recognisable with the Scottish flag but felt this could be overpowering and distracting. The navy background is complemented with white text, but interactive  elements e.g. the dialog instructions and the quiz itself have a white background and navy (—scotswot-blue) text to provide an effective contrast against the main background. 
+The colour scheme for ScotSwot was selected to ensure readability and accessibility. Dark navy is the primary colour to reflect the blue tones associated with Scotland. CSS variables were used to avoid repetition and enhance maintainability (the primary navy colour being —scotswot-blue). I considered the use of a lighter blue to be more recognisable with the Scottish flag but felt this could be overpowering and distracting. The navy background is complemented with white text, but interactive  elements e.g. the dialog instructions and the quiz itself have a white background and navy (—scotswot-blue) text to provide an effective contrast against the main background. 
 
 Colours used:
-- **#0a1547** - for main background and some text elements in dialog and quiz container
-- **#ffffff** - for heading, main text elements and background of dialog instructions and quiz container
-- **#808080** for opaque dialog overlay 
-
+- **#0a1547** - for main background and some text elements in dialog and quiz container.
+- **#ffffff** - for heading, main text elements and background of dialog instructions and quiz container.
+- **#808080** for opaque dialog overlay.
 
 ### Typography ###
 
-A Google Font was selected for Scotswot: **Signika**. This was used for all text elements to ensure consistency and clarity. The font is sans-serif without flourishes to provide style and functionality. I researched a variety of fonts and selected this one for its readability and accessibility whilst also being aesthetically pleasing. 
+A Google Font was selected for ScotSwot: **Signika**. This was used for all text elements to ensure consistency and clarity. The font is sans-serif without flourishes to provide style and functionality. I researched a variety of fonts and selected this one for its readability and accessibility whilst also being aesthetically pleasing. 
 
 ### Images ###
 
@@ -51,13 +52,11 @@ The imagery used in ScotSwot creates a visually appealing experience that captiv
 A digital tartan was used for the header background. Tartan is quintessentially Scottish and instantly recognisable across the world. I searched through a variety of tartans to ensure the chosen tartan compliments the “scotswot-blue” background. Additionally many of the tartans available had strong patterns with white details which were avoided to ensure the ScotSwot header was clear and legible. The chosen tartan looks aesthetically pleasing in the header space without being overpowering.
 ![Tartan](documentation/tartan-image.png)
 
-A cartoon image of the Loch Ness Monster was used to add some fun to the site for users. The image is colourful without being distracting and works well with the overall colour scheme and subtle greens in the tartan header. The image comes with detailed alternative text descriptions, offering context for users who use screen readers.
+A cartoon image of the Loch Ness Monster "Nessie" was used to add some fun to the site and make it entertaining for users. The image is colourful without being distracting and works effectively with the overall colour scheme and subtle greens in the tartan header. The image comes with a detailed alternative text description, offering context for users who use screen readers.
 ![Nessie image](documentation/nessie-image-doc.png)
 
-
 ## Features ##
-
-ScotSwot offers an engaging online platform with clear information and interactive buttons. The overall quiz offers a smooth user experience across devices and screen sizes through its responsive design. 
+ScotSwot offers an engaging online platform with clear information and interactive buttons leading to the quiz instructions and the quiz itself. The overall quiz offers a smooth user experience across devices and screen sizes through its responsive design. 
 
 ### Favicon ###
 A Favicon was added to help users identify the website in their browser. The Scotland flag emoji was selected to reflect the Scottish theme.
@@ -66,40 +65,52 @@ A Favicon was added to help users identify the website in their browser. The Sco
 
 ### Header ###
 ScotSwot features a header with the site's title and the tartan image background. The header has a clickable link which allows users to easily refresh the page.
+
 ![Header](documentation/scotswot-header.png)
 
 ### Introduction ###
-ScotSwot contains a introduction which welcomes users to the site and provides them with a concise description of what to expect from the quiz. The introduction gives a clear invitation to take the quiz, encouraging users to get started.
+ScotSwot contains an introduction which welcomes users to the site and provides them with a concise description of what to expect from the quiz. The introduction gives a clear invitation to take the quiz, encouraging users to get started.
+
 ![Introduction](documentation/scotswot-introduction.png)
 
-The introduction is followed by two buttons. All buttons inluding the two first seen by users have been designed to contrast with the background colour. They have also been rounded to make them more aesthetically pleasing and provide users with a positive experience when using these functions. 
+The introduction is followed by two buttons. All buttons including the two first seen by users have been designed to contrast with the background colour. They have also been rounded to make them more aesthetically pleasing and provide users with a positive experience when using these functions. 
+
 ![Quiz buttons](documentation/scotswot-buttons.png)
 
 ### Quiz Instructions ###
 ScotSwot features two initial buttons, the first users encounter is the "How to play?" button. Upon clicking, a modal (created via the dialog element), appears with a clear set of instructions. This is essential for first-time users, and as a refresh for returning users to ensure they feel ready to begin the quiz. To avoid the main background causing distraction, an opaque effect has been used to blur this while the instructions are read by the user. 
+
 ![Instructions](documentation/scotswot-instructions.png)
 
 ### Difficulty Selection ###
 ScotSwot lets users initiate and control actions by providing three difficulty levels for the quiz: Easy, Medium and Hard. This enhances site users enjoyment by allowing them to either choose a quiz difficulty level based on their current knowledge, or challenge themselves with a more difficult option. 
+
 ![Difficulty](documentation/scotswot-difficulty-levels.png)
 
-### ScotSwot Quiz ###
+### The ScotSwot Quiz ###
+Once difficulty level has been selected, ScotSwot offers site users an interactive quiz which includes the quiz question, three multiple choice answers via radio buttons and a “submit answer" button. The quiz container also has a tally in the top left corner for users to see how many questions remain. There are currently seven questions in total for each difficulty level. This number is designed to hold the users interest and keep the quiz entertaining, whilst also offering a learning experience of the words and phrases without overwhelming the user. 
+
+The ScotSwot quiz has been designed to ensure users must select an answer, if they try to submit without selecting an answer they receive feedback stating “Please select an answer”. Once users select the answer and submit, they will receive "Correct" feedback for a correct answer and “Incorrect - try again!” feedback for an incorrect answer. To enhance the feedback, the "Correct" feedback appears in green and both the “Incorrect - try again!” and “Please select an answer” appear in red. Additionally, the radio buttons are unchecked when each question is displayed to further enhance the users experience.  
+
+Once the user submits their answer, the “Next question” button appears at the same time as the feedback. ScotSwot was designed to give users the option to try again by selecting another answer or simply move on to the next question and get a true final score without retries. This again reinforces the concept of users being able to use ScotSwot as a learning experience and give users the satisfaction of finding out the correct answer if they initially chose incorrectly. 
 
 ![Quiz questions and feedback](documentation/scotswot-quiz-questions-feedback.png)
+
+When users submit the final question in the quiz, they are presented with overall feedback through a final score and some Scottish phrases to indicate their performance. Users who gain full marks receive a celebratory message and those who do not reach this are wished luck for next time. This is a fair and effective use of feedback to celebrate full marks given users have the opportunity to “try again” to improve their score. 
 
 ![Quiz final score](documentation/scotswot-quiz-score.png)
 
 ### Future Implementations ###
 Possible upgrades I would like to implement include:
 - Incorporate the use of animations, for example a celebratory animation when users get a correct answer or receive a perfect final score to enhance their experience.
-- Incorporate sharing possibilities to allow users to share their scores and achievements via messaging apps or social media. This would enhance the users experience and could encourage others to visit the site and enjoy the quiz. 
+- Incorporate sharing possibilities to allow users to share their scores and achievements via messaging apps or social media. This would enrich the users experience and could encourage others to visit the site and enjoy the quiz. 
 
 ## Testing ##
-Testing was used throughout the entirety of the Scotswot project. Every HTML, CSS and Javascript change or experiment was checked in the browser to monitor UX, the functionality and aesthetics of each page. With each change, Google Developer tools were used to test changes across mobile, tablet and larger laptop and desktop screens (see UX section).
+Testing was used throughout the entirety of the ScotSwot project. Every HTML, CSS and Javascript change or experiment was checked in the browser to monitor UX, the functionality and aesthetics of each page. With each change, Google Developer tools were used to test changes across mobile, tablet and larger laptop and desktop screens (see UX section).
 
 ### Validator Testing ### 
 - **HTML**
-    - W3C Validator returned an error message relating to the use of a section element without a heading and suggested using a div element instead. This was amended and fixed in this commit: [Commit section fix](https://github.com/LauraO90/ScotSwot/commit/4ab53bd76cdfd9716e1fb070e31ae59ce2861074). No errors were returned when retested and no other errors were returned when passing through the W3C validator.
+    - W3C Validator returned an error message relating to the use of a section element without a heading and suggested using a div element instead. This was amended and fixed in this commit: [Commit section fix](https://github.com/LauraO90/ScotSwot/commit/4ab53bd76cdfd9716e1fb070e31ae59ce2861074). No errors were returned when retested, and no other errors were returned when passing through the W3C validator.
 ![W3C HTML](documentation/scotswot-validator-html.png)
 
 - **CSS**
@@ -107,7 +118,7 @@ Testing was used throughout the entirety of the Scotswot project. Every HTML, CS
 ![Jigsaw CSS](documentation/scotswot-validator-css.png)
 
 - **JavaScript**
-    - Early in the development if Scotswot, JSHint returned feedback regarding unused code which was removed immediately. Since then, JSHint returned no errors but highlighted six unused varables. These variables are however essential and are called via onclick events in the index.html file.  
+    - Early in the development of ScotSwot, JSHint returned feedback regarding unused code which was removed immediately. Since then, JSHint returned no errors but highlighted six unused variables. These variables are however essential and are called via onclick events in the index.html file.  
 ![JSHint Javascript](documentation/scotswot-validator-javascript.png)
 
 ### Browser Testing ### 
@@ -120,13 +131,13 @@ Testing was used throughout the entirety of the Scotswot project. Every HTML, CS
 - When reviewing the quiz I observed the radio buttons remained checked when the user moved to the next question. This was amended and fixed in this commit: [Commit uncheck radio button fix](https://github.com/LauraO90/ScotSwot/commit/e01eeccf13e0156c826c499ea74c2062bc661994#diff-4698a0d6946cc7eab0ee49f1773e6bfa66a91c8c1ae37b2587b9dc9ebdf47247).
 
 ### Lighthouse Audit ###
-- I ran Lighthouse on my project and the results were consistently between 91-100% for Perfromance, Accessibility, Best Practices and SEO.
+- I ran Lighthouse on my project and the results were consistently between 91-100% for Performance, Accessibility, Best Practices and SEO.
 - The header and Nessie image were updated to improve sizing and Performance. 
 ![Lighthouse](documentation/scotswot-lighthouse.png)
 
 ## Deployment ##
 
-ScotSwot was created using Gitpod Enterprise and the site was deployed to Github pages: [ScotSwot deployment](https://laurao90.github.io/ScotSwot/)
+ScotSwot was created using Gitpod Enterprise and the site was deployed to Github: [ScotSwot deployment](https://laurao90.github.io/ScotSwot/)
 
 ### Deployment to GitHub Pages ###
 
@@ -169,12 +180,11 @@ The steps to fork this repository are as follows:
 
 [Tartanify](https://tartanify.com/) used for tartan pattern on header. 
 
-[Imgbin](https://imgbin.com/) used for cartoon image. 
+[Imgbin](https://imgbin.com/) used for cartoon Nessie image. 
 
 [Favicon](https://favicon.io/emoji-favicons/flag-scotland) used for favicon emoji. 
 
 [Am I Responsive](https://ui.dev/amiresponsive) used to check responsiveness alongside Google Developer tools. 
 
-
 ## Acknowledgements ##  
-I would like to thank my Code Institute mentor Chris Quinn for their support and guidance during this project. 
+I would like to thank my Code Institute mentor Chris Quinn for their support and guidance during this project.
